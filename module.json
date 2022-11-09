@@ -1,0 +1,30 @@
+{
+  "name": "dsa5-tools",
+  "title": "The Dark Eye 5th Ed. - tools",
+  "description": "Module with different tools: \n-the cost of creating a Weapon or Armor \n-focus rules for hunting and fishing",
+  "authors": [
+    {
+      "name": "Pitchblack"
+    }
+  ],
+  "version": "1.0.0",
+  "minimumCoreVersion": "10",
+  "scripts": [],
+  "esmodules": ["scripts/dsa5-tools.js"],
+  "styles": ["styles/dsa5-tools.css"],
+  "languages": [
+    {
+      "lang": "de",
+      "name": "German",
+      "path": "languages/de.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "url": "https://github.com/KorthaseC/dsa5-tools.git",
+  "manifest": "",
+  "download": ""
+}

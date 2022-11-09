@@ -1,0 +1,40 @@
+<div>
+  <p>
+    {{{localize 'HUNTING.search.finalize.general' text=text qs=availableQs
+    easy=easy actor=actor.name}}} {{#if (eq mode 'fishing')}}
+    <br />{{{localize 'HUNTING.search.finalize.fishCatched' qs=availableQs}}}
+    {{/if}} {{#if (eq mode 'trap')}} <br />{{{localize
+    'HUNTING.search.finalize.trapped' qs=availableQs}}} {{/if}} {{#if (eq mode
+    'hunted')}} <br />{{{localize 'HUNTING.search.finalize.hunted'
+    qs=availableQs}}} {{/if}}
+  </p>
+  <div
+    class="row-section onlyTarget"
+    data-token="{{token}}"
+    data-actor="{{actor.id}}"
+  >
+    {{#if (eq mode 'hunting')}}
+    <button
+      data-token="{{token}}"
+      data-actor="{{actor.id}}"
+      data-mode="{{mode}}"
+      data-submode="1"
+      data-qs="{{availableQs}}"
+      class="finalizeHunt"
+    >
+      {{localize 'HUNTING.button.chooseWeapon'}}
+    </button>
+    {{else}} {{#if (eq mode 'trap')}}
+    <button
+      data-token="{{token}}"
+      data-actor="{{actor.id}}"
+      data-mode="{{mode}}"
+      data-submode="1"
+      data-qs="{{availableQs}}"
+      class="finalizeHunt"
+    >
+      {{localize 'HUNTING.button.chooseWeapon'}}
+    </button>
+    {{/if}} {{/if}}
+  </div>
+</div>

@@ -1,0 +1,107 @@
+.window-size {
+  width: 955px;
+  height: 400px;
+}
+
+.d-flex {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.label-block {
+  display: block;
+  width: 20%;
+}
+
+.w-10p {
+  width: 10% !important;
+}
+
+.w-20p {
+  width: 20% !important;
+}
+
+.w-39p {
+  width: 39% !important;
+}
+
+.w-50p {
+  width: 50% !important;
+}
+
+.w-60p {
+  width: 60% !important;
+}
+
+.w-70p {
+  width: 70% !important;
+}
+
+.w-80p {
+  width: 80% !important;
+}
+
+.p-l-5 {
+  padding-left: 5px !important;
+}
+
+.p-l-20 {
+  padding-left: 20px !important;
+}
+
+.p-r-5 {
+  padding-right: 5px !important;
+}
+
+.p-t-5 {
+  padding-top: 5px !important;
+}
+
+.m-l-a {
+  margin-left: auto;
+}
+
+.m-l-20 {
+  margin-left: 20px !important;
+}
+
+.m-l-50 {
+  margin-left: 50px !important;
+}
+
+.m-r-a {
+  margin-right: auto;
+}
+
+.m-r-5 {
+  margin-right: 5px !important;
+}
+
+.m-r-25 {
+  margin-right: 25px !important;
+}
+
+.text-allign-r {
+  text-align: right !important;
+}
+
+.info-text {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.calc-button {
+  height: 40px;
+}
+
+.weapon-button {
+  height: 50px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+.weapon-img {
+  height: 40px;
+}

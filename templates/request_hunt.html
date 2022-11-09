@@ -1,0 +1,21 @@
+<div>
+  <p>{{hunt_text}}</p>
+  <p>
+    <b>{{localize 'HUNTING.huntingGround.label'}}</b>: {{region_label}}<br />
+    <b>{{localize 'HUNTING.weather.label'}}</b>: {{weather_label}}<br />
+  </p>
+  <button
+    data-region="{{region}}"
+    data-weather-label="{{weather_label}}"
+    data-region-label="{{region_label}}"
+    data-mode="{{mode}}"
+    data-weather="{{weather}}"
+    class="requestAnimalLore"
+  >
+    {{#if (eq mode 'fishing')}}
+    <p>{{localize 'HUNTING.search.fishChatButton'}}</p>
+    {{else}}
+    <p>{{localize 'HUNTING.search.animalChatButton'}}</p>
+    {{/if}}
+  </button>
+</div>

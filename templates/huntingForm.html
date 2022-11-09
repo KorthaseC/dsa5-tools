@@ -1,0 +1,90 @@
+<form id="smithingForm" class="window-size">
+  <div class="row-section" id="item-list">
+    <div class="col eighty">
+      <div class="d-flex">
+        <label class="label-block">{{localize "HUNTING.hunt.label"}}</label>
+        <div class="w-80p">
+          <input
+            type="radio"
+            name="hunt"
+            value="hunting"
+            id="hunting"
+            checked
+            class="m-r-5"
+          />
+          <label for="hunting">{{localize "HUNTING.hunt.hunting"}}</label>
+          <input
+            type="radio"
+            name="hunt"
+            value="raisedBlind"
+            id="raisedBlind"
+            class="m-l-50 m-r-5"
+          />
+          <label for="raisedBlind"
+            >{{localize "HUNTING.hunt.raisedBlind"}}</label
+          >
+          <input
+            type="radio"
+            name="hunt"
+            value="trap"
+            id="trap"
+            class="m-l-50 m-r-5"
+          />
+          <label for="trap">{{localize "HUNTING.hunt.trap"}}</label>
+          <input
+            type="radio"
+            name="hunt"
+            value="fishing"
+            id="fishing"
+            class="m-l-50 m-r-5"
+          />
+          <label for="fishing">{{localize "HUNTING.hunt.fishing"}}</label>
+        </div>
+      </div>
+
+      <div class="d-flex">
+        <label class="label-block"
+          >{{localize "HUNTING.huntingGround.label"}}</label
+        >
+        <select id="huntingGround" class="w-80p">
+          <option value="best">
+            {{localize "HUNTING.huntingGround.best"}}
+          </option>
+          <option value="better">
+            {{localize "HUNTING.huntingGround.better"}}
+          </option>
+          <option value="good">
+            {{localize "HUNTING.huntingGround.good"}}
+          </option>
+          <option value="normal" selected>
+            {{localize "HUNTING.huntingGround.normal"}}
+          </option>
+          <option value="bad">{{localize "HUNTING.huntingGround.bad"}}</option>
+          <option value="worse">
+            {{localize "HUNTING.huntingGround.worse"}}
+          </option>
+          <option value="worst">
+            {{localize "HUNTING.huntingGround.worst"}}
+          </option>
+        </select>
+      </div>
+
+      <div class="d-flex">
+        <label class="label-block">{{localize "HUNTING.weather.label"}}</label>
+        <select id="weather" class="w-80p">
+          <option value="none" selected>
+            {{localize "HUNTING.weather.none"}}
+          </option>
+          <option value="rain">{{localize "HUNTING.weather.rain"}}</option>
+          <option value="storm">{{localize "HUNTING.weather.storm"}}</option>
+          <option value="hurricane">
+            {{localize "HUNTING.weather.hurricane"}}
+          </option>
+        </select>
+      </div>
+      <button class="calc-button" id="startHuntButton">
+        <em class="fa fa-deer"></em> {{localize "HUNTING.button.huntBegin"}}
+      </button>
+    </div>
+  </div>
+</form>

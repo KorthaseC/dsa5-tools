@@ -1,0 +1,183 @@
+<form id="smithingForm" class="window-size">
+  <div class="row-section" id="item-list">
+    <div class="col eighty">
+      <div class="d-flex">
+        <label class="label-block"
+          >{{localize "SMITHING.qualification.label"}}</label
+        >
+        <select id="quali" class="w-80p">
+          <option value="low" selected>
+            {{localize "SMITHING.qualification.low"}}
+          </option>
+          <option value="medium">
+            {{localize "SMITHING.qualification.medium"}}
+          </option>
+          <option value="high">
+            {{localize "SMITHING.qualification.high"}}
+          </option>
+          <option value="perfect">
+            {{localize "SMITHING.qualification.perfect"}}
+          </option>
+        </select>
+      </div>
+
+      <div class="d-flex">
+        <label class="label-block">{{localize "SMITHING.workingPrice"}}</label>
+        <input
+          id="slider"
+          type="range"
+          step="0.01"
+          min="0.01"
+          max="0.9"
+          value="0.1"
+          class="w-60p p-r-5"
+        />
+        <input
+          type="number"
+          value="0.1"
+          step="0.01"
+          max="50.0"
+          id="priceValue"
+          class="w-10p"
+        />
+        <label class="w-10p p-l-5">{{localize "SMITHING.silver"}}</label>
+      </div>
+
+      <div class="d-flex">
+        <label class="label-block">{{localize "SMITHING.talentValue"}}</label>
+        <input
+          type="number"
+          value="10"
+          min="8"
+          max="25"
+          id="attr1"
+          class="w-20p m-r-25"
+        />
+        <input
+          type="number"
+          value="10"
+          min="8"
+          max="25"
+          id="attr2"
+          class="w-20p m-r-25"
+        />
+        <input
+          type="number"
+          value="10"
+          min="8"
+          max="25"
+          id="attr3"
+          class="w-20p m-r-25"
+        />
+        <label class="p-r-5 text-allign-r">FW: </label>
+        <input type="number" value="7" min="0" max="25" id="fw" class="w-10p" />
+      </div>
+
+      <div class="d-flex">
+        <label class="label-block">{{localize "SMITHING.weapon.label"}}</label>
+        <select id="weapon" class="w-80p">
+          <option value="crossbow">
+            {{localize "SMITHING.weapon.crossbow"}}
+          </option>
+          <option value="bow">{{localize "SMITHING.weapon.bow"}}</option>
+          <option value="dagger">{{localize "SMITHING.weapon.dagger"}}</option>
+          <option value="degen">{{localize "SMITHING.weapon.degen"}}</option>
+          <option value="club">{{localize "SMITHING.weapon.club"}}</option>
+          <option value="chain">{{localize "SMITHING.weapon.chain"}}</option>
+          <option value="lance">{{localize "SMITHING.weapon.lance"}}</option>
+          <option value="whip">{{localize "SMITHING.weapon.whip"}}</option>
+          <option value="brawl">{{localize "SMITHING.weapon.brawl"}}</option>
+          <option value="shield">{{localize "SMITHING.weapon.shield"}}</option>
+          <option value="slingshot">
+            {{localize "SMITHING.weapon.slingshot"}}
+          </option>
+          <option value="sword">{{localize "SMITHING.weapon.sword"}}</option>
+          <option value="staff">{{localize "SMITHING.weapon.staff"}}</option>
+          <option value="throw">{{localize "SMITHING.weapon.throw"}}</option>
+          <option value="twoClub">
+            {{localize "SMITHING.weapon.twoClub"}}
+          </option>
+          <option value="twoSword">
+            {{localize "SMITHING.weapon.twoSword"}}
+          </option>
+          <option value="normalCloth">
+            {{localize "SMITHING.weapon.normalCloth"}}
+          </option>
+          <option value="thickCloth">
+            {{localize "SMITHING.weapon.thickCloth"}}
+          </option>
+          <option value="clothArmor">
+            {{localize "SMITHING.weapon.clothArmor"}}
+          </option>
+          <option value="leatherArmor">
+            {{localize "SMITHING.weapon.leatherArmor"}}
+          </option>
+          <option value="woodArmor">
+            {{localize "SMITHING.weapon.woodArmor"}}
+          </option>
+          <option value="chainArmor">
+            {{localize "SMITHING.weapon.chainArmor"}}
+          </option>
+          <option value="scaleArmor">
+            {{localize "SMITHING.weapon.scaleArmor"}}
+          </option>
+          <option value="palteArmor">
+            {{localize "SMITHING.weapon.palteArmor"}}
+          </option>
+          <option value="turnier">
+            {{localize "SMITHING.weapon.turnier"}}
+          </option>
+        </select>
+      </div>
+
+      <div class="d-flex">
+        <label class="label-block">{{localize "SMITHING.material.label"}} <em id="materialTip"></em></label>
+        <select id="material" class="w-80p"></select>
+      </div>
+
+      <div class="d-flex">
+        <label class="label-block">{{localize "SMITHING.standardPrice"}}</label>
+        <input type="number" value="100" id="itemPrice" class="w-70p" />
+        <label class="p-l-5">{{localize "SMITHING.silver"}}</label>
+      </div>
+
+      <div class="d-flex">
+        <label class="label-block">{{localize "SMITHING.standardWeight"}}</label>
+        <input
+          type="number"
+          value="1"
+          id="itemWeight"
+          class="w-70p"
+          step="0.25"
+        />
+        <label class="w-10p p-l-5">{{localize "SMITHING.stone"}}</label>
+      </div>
+
+      <div class="d-flex">
+        <label class="label-block"
+          >{{localize "SMITHING.boni.label"}}
+          <em
+            class="fas fa-circle-info"
+            data-tooltip="{{localize "SMITHING.boni.tooltip"}}"
+          ></em
+        ></label>
+        <select id="boni1" class="w-39p"></select>
+        <select id="boni2" class="w-39p m-l-20"></select>
+      </div>
+
+      <div class="d-flex">
+        <label class="label-block"
+          >{{localize "SMITHING.craftTechnic.label"}} <em id="craftTechnicTip"></em
+        ></label>
+        <select id="craftTechnic" class="w-80p"></select>
+      </div>
+      <div id="priceText" class="info-text"></div>
+      <div id="meteorText" class="info-text"></div>
+    </div>
+  </div>
+  <footer class="sheet-footer flexrow p-t-5">
+    <button class="calc-button" id="calcButton">
+      <em class="fa fa-calculator"></em> {{localize "SMITHING.calcButton"}}
+    </button>
+  </footer>
+</form>

@@ -1,0 +1,35 @@
+<div>
+  {{#if (eq mode 'fishing')}}
+  <p>
+    {{{localize 'HUNTING.search.successFish' qs=availableQs easy=easy
+    actor=actor.name}}}
+  </p>
+  {{else}}
+  <p>
+    {{{localize 'HUNTING.search.successHunt' qs=availableQs easy=easy
+    actor=actor.name}}}
+  </p>
+  {{/if}}
+  <div
+    class="row-section onlyTarget"
+    data-token="{{token}}"
+    data-actor="{{actor.id}}"
+  >
+    <button
+      data-token="{{token}}"
+      data-actor="{{actor.id}}"
+      data-mode="{{mode}}"
+      data-submode="1"
+      data-qs="{{availableQs}}"
+      class="requestHuntSkill"
+    >
+      {{#if (eq mode 'hunting')}}
+      <p>{{localize 'HUNTING.button.trackSearch'}}</p>
+      {{else}} {{#if (eq mode 'trap')}}
+      <p>{{localize 'HUNTING.button.trackSearch'}}</p>
+      {{else}}
+      <p>{{localize 'HUNTING.button.hiding'}}</p>
+      {{/if}} {{/if}}
+    </button>
+  </div>
+</div>
