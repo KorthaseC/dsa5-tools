@@ -25,6 +25,6 @@
     }
   ],
   "url": "https://github.com/KorthaseC/dsa5-tools",
-  "manifest": "https://github.com/KorthaseC/dsa5-tools/releases/1.0.0/module.json",
-  "download": "https://github.com/KorthaseC/dsa5-tools/releases/1.0.0/module.zip"
+  "manifest": "https://github.com/KorthaseC/dsa5-tools/releases/download/1.0.0/module.json",
+  "download": "https://github.com/KorthaseC/dsa5-tools/releases/download/1.0.0/module.zip"
 }
