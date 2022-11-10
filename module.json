@@ -28,11 +28,9 @@
     "systems": [
       {
         "id": "dsa5",
-        "manifest": "https://raw.githubusercontent.com/Plushtoast/dsa5-foundryVTT/foundry10/system.json",
+        "type": "system",
         "compatibility": {
-          "minimum": "4.1.0",
-          "verified": "4.1.0",
-          "maximum": "4.1.0"
+          "minimum": "4.0.0"
         }
       }
     ]
