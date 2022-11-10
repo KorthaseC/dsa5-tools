@@ -1,17 +1,10 @@
 {
-  "name": "dsa5-tools",
   "title": "The Dark Eye 5th Ed. - tools",
   "description": "Module with different tools: \n-the cost of creating a Weapon or Armor \n-focus rules for hunting and fishing",
-  "authors": [
-    {
-      "name": "Pitchblack"
-    }
-  ],
   "version": "1.0.0",
-  "minimumCoreVersion": "10",
-  "scripts": [],
-  "esmodules": ["scripts/dsa5-tools.js"],
-  "styles": ["styles/dsa5-tools.css"],
+  "url": "https://github.com/KorthaseC/dsa5-tools",
+  "manifest": "https://github.com/KorthaseC/dsa5-tools/releases/download/1.0.0/module.json",
+  "download": "https://github.com/KorthaseC/dsa5-tools/releases/download/1.0.0/module.zip",
   "languages": [
     {
       "lang": "de",
@@ -22,6 +15,14 @@
       "lang": "en",
       "name": "English",
       "path": "languages/en.json"
+    }
+  ],
+  "esmodules": ["scripts/dsa5-tools.js"],
+  "styles": ["styles/dsa5-tools.css"],
+  "id": "dsa5-tools",
+  "authors": [
+    {
+      "name": "Pitchblack"
     }
   ],
   "relationships": {
@@ -35,12 +36,11 @@
       }
     ]
   },
-  "url": "https://github.com/KorthaseC/dsa5-tools",
-  "manifest": "https://github.com/KorthaseC/dsa5-tools/releases/download/1.0.0/module.json",
-  "download": "https://github.com/KorthaseC/dsa5-tools/releases/download/1.0.0/module.zip",
   "compatibility": {
     "minimum": "10",
     "verified": "10",
     "maximum": "10"
-  }
+  },
+  "name": "dsa5-tools",
+  "minimumCoreVersion": "10"
 }
